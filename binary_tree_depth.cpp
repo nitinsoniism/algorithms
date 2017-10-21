@@ -23,13 +23,13 @@ class Tree
 {
     private:
         Node *root;
+        int _depth(Node *T);
+        void destroy(Node *rt);
     public:
         Tree(Node *rt) { root = rt;}
         ~Tree();
 
-        int _depth(Node *T);
         int depth();
-        void destroy(Node *rt);
 };
 
 int Tree::_depth(Node *T)
